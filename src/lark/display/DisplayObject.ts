@@ -1165,6 +1165,7 @@ module lark {
             if (value) {
                 if (!this.$scrollRect) {
                     this.$scrollRect = new lark.Rectangle();
+                    window['scrollRect'] = this.$scrollRect;
                 }
                 this.$scrollRect.copyFrom(value);
             }

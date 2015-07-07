@@ -567,7 +567,7 @@ module lark {
                 parentCache.markDirty(displayList || child);
             }
             if (displayList) {
-                return;
+                parentCache = displayList;
             }
             var children = child.$children;
             if (children) {
